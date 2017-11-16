@@ -33,4 +33,10 @@ class Book {
 		return this;
 	}
 	
+	//mark a book as checked in at the library
+	public Book checkIn() {
+		this.isAvailable = true;
+		return this;
+	}
+	
 }

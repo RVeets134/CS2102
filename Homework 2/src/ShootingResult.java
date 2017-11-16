@@ -4,14 +4,6 @@ class ShootingResult implements IEvent{
 	
 	LinkedList<ShootingRound> rounds;
 	
-	ShootingResult(ShootingRound one, ShootingRound two, ShootingRound three, ShootingRound four){
-		this.rounds = new LinkedList<>();
-		this.rounds.add(one);
-		this.rounds.add(two);
-		this.rounds.add(three);
-		this.rounds.add(four);
-	}
-	
 	ShootingResult(LinkedList<ShootingRound> rounds) {
 		this.rounds = rounds;
 	}

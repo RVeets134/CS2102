@@ -16,7 +16,7 @@ abstract class AbsAnimal implements IAnimal {
   }
   
   // default method for animals that are not dangerous
-  public boolean isDangerToPeople() {
+  boolean isDangerToPeople() {
 	  return false;
   }
   
@@ -36,7 +36,7 @@ class Dillo extends AbsAnimal {
   }
   
   // determines whether this dillo's length is between 2 and 3
-  public boolean isNormalSize () {
+  boolean isNormalSize () {
     return isLenWithin(2,3);
   }
 
@@ -54,12 +54,12 @@ class Boa extends AbsAnimal {
   }
   
   // determines whether this boa's length is between 5 and 10
-  public boolean isNormalSize () {
+  boolean isNormalSize () {
     return isLenWithin(5,10);
   }
   
   // determines whether a boa is dangerous
-  public boolean isDangerToPeople() {
+ boolean isDangerToPeople() {
 	  return eats.equals("people");
   }
   
@@ -75,7 +75,7 @@ class Fish extends AbsAnimal{
     }
 
     // determines if a fish's length is between 1 to 15
-    public boolean isNormalSize () {
+    boolean isNormalSize () {
       return isLenWithin(1,15);
     }
 
@@ -92,12 +92,12 @@ class Shark extends Fish{
     }
     
     // determines whether the shark is of normal size, above 6
-    public boolean isNormalSize() {
+    boolean isNormalSize() {
     	return length > 6;
     }
     
     // determines whether a shark is dangerous based on if it's attacked before
-    public boolean isDangerToPeople() {
+    boolean isDangerToPeople() {
     	return attacks > 0;
     }
 
